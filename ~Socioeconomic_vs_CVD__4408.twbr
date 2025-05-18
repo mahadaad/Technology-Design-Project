@@ -1,0 +1,1368 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20242.24.0711.1636                               -->
+<workbook original-version='18.1' source-build='2024.2.1 (20242.24.0711.1636)' source-platform='win' version='18.1' xml:base='https://public.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AccessibleZoneTabOrder.true...AccessibleZoneTabOrder />
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MapboxVectorStylesAndLayers />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelExtractV2.true...ObjectModelExtractV2 />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <repository-location id='Socioeconomic_vs_CVD' path='/workbooks' revision='1.1' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='Sheet1 (SES_vs_CVD_LongFormat)' inline='true' name='federated.1hif58f0j4ncm115c49yt06o3yzt' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='SES_vs_CVD_LongFormat' name='excel-direct.0g4zr440mrcyra1fije9v1cjt5hg'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/YOGA/AppData/Local/Temp/TableauTemp/1277756942/Data/CVD_D/SES_vs_CVD_LongFormat.xlsx' interpretationMode='0' password='' server='' validate='no' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='excel-direct.0g4zr440mrcyra1fije9v1cjt5hg' name='Sheet1' table='[Sheet1$]' type='table'>
+          <columns gridOrigin='A1:K3361:no:A1:K3361:0' header='yes' outcome='6'>
+            <column datatype='string' name='Code' ordinal='0' />
+            <column datatype='string' name='Region' ordinal='1' />
+            <column datatype='string' name='Gender' ordinal='2' />
+            <column datatype='string' name='AgeGroup' ordinal='3' />
+            <column datatype='string' name='Year' ordinal='4' />
+            <column datatype='date' name='Year_Start' ordinal='5' />
+            <column datatype='real' name='DeathRatePer100k' ordinal='6' />
+            <column datatype='real' name='HospitalisationsPer100k' ordinal='7' />
+            <column datatype='string' name='SES_Variable' ordinal='8' />
+            <column datatype='real' name='SES_Value' ordinal='9' />
+            <column datatype='string' name='State' ordinal='10' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='excel-direct.0g4zr440mrcyra1fije9v1cjt5hg' name='Sheet1' table='[Sheet1$]' type='table'>
+          <columns gridOrigin='A1:K3361:no:A1:K3361:0' header='yes' outcome='6'>
+            <column datatype='string' name='Code' ordinal='0' />
+            <column datatype='string' name='Region' ordinal='1' />
+            <column datatype='string' name='Gender' ordinal='2' />
+            <column datatype='string' name='AgeGroup' ordinal='3' />
+            <column datatype='string' name='Year' ordinal='4' />
+            <column datatype='date' name='Year_Start' ordinal='5' />
+            <column datatype='real' name='DeathRatePer100k' ordinal='6' />
+            <column datatype='real' name='HospitalisationsPer100k' ordinal='7' />
+            <column datatype='string' name='SES_Variable' ordinal='8' />
+            <column datatype='real' name='SES_Value' ordinal='9' />
+            <column datatype='string' name='State' ordinal='10' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>2</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:K3361:no:A1:K3361:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Code</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Code]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Code</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RAU_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_267465DD60BA4F52B5981571BD54BB9C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Region</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Region]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Region</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RAU_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_267465DD60BA4F52B5981571BD54BB9C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Gender</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Gender]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Gender</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RAU_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_267465DD60BA4F52B5981571BD54BB9C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AgeGroup</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[AgeGroup]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>AgeGroup</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RAU_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_267465DD60BA4F52B5981571BD54BB9C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Year</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Year]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Year</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RAU_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_267465DD60BA4F52B5981571BD54BB9C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Year_Start</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Year_Start]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Year_Start</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_267465DD60BA4F52B5981571BD54BB9C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DeathRatePer100k</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[DeathRatePer100k]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>DeathRatePer100k</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_267465DD60BA4F52B5981571BD54BB9C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>HospitalisationsPer100k</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[HospitalisationsPer100k]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>HospitalisationsPer100k</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_267465DD60BA4F52B5981571BD54BB9C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SES_Variable</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[SES_Variable]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>SES_Variable</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RAU_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_267465DD60BA4F52B5981571BD54BB9C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SES_Value</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[SES_Value]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>SES_Value</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_267465DD60BA4F52B5981571BD54BB9C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[State]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>State</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RAU_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_267465DD60BA4F52B5981571BD54BB9C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Age Group' datatype='string' name='[AgeGroup]' role='dimension' type='nominal' />
+      <column aggregation='Sum' datatype='real' name='[DeathRatePer100k]' role='dimension' type='quantitative' />
+      <column datatype='string' name='[Region]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column caption='SES Value (bin)' datatype='integer' name='[SES Value (bin)]' role='dimension' type='ordinal'>
+        <calculation class='bin' decimals='1' formula='[SES_Value]' peg='0' size='10' />
+      </column>
+      <column aggregation='Sum' caption='SES Value' datatype='real' name='[SES_Value]' role='dimension' type='ordinal' />
+      <column caption='SES Variable' datatype='string' name='[SES_Variable]' role='dimension' type='nominal' />
+      <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column caption='Year Start' datatype='date' name='[Year_Start]' role='dimension' type='ordinal' />
+      <_.fcp.ObjectModelTableType.true...column caption='Sheet1' datatype='table' name='[__tableau_internal_object_id__].[Sheet1_267465DD60BA4F52B5981571BD54BB9C]' role='measure' type='quantitative' />
+      <column-instance column='[SES_Variable]' derivation='None' name='[none:SES_Variable:nk]' pivot='key' type='nominal' />
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='en_US' class='hyper' dbname='Data/Socioeconomic_vs_CVD.twb Files/federated.hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Code</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Code]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Code</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Sheet1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>30</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RAU_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Region</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Region]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Region</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Sheet1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>30</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RAU_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Gender</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Gender]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Gender</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Sheet1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RAU_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>AgeGroup</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[AgeGroup]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>AgeGroup</remote-alias>
+              <ordinal>3</ordinal>
+              <family>Sheet1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RAU_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Year</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Year]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Year</remote-alias>
+              <ordinal>4</ordinal>
+              <family>Sheet1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RAU_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Year_Start</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[Year_Start]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Year_Start</remote-alias>
+              <ordinal>5</ordinal>
+              <family>Sheet1</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>DeathRatePer100k</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[DeathRatePer100k]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>DeathRatePer100k</remote-alias>
+              <ordinal>6</ordinal>
+              <family>Sheet1</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>120</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>HospitalisationsPer100k</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[HospitalisationsPer100k]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>HospitalisationsPer100k</remote-alias>
+              <ordinal>7</ordinal>
+              <family>Sheet1</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>120</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>SES_Variable</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[SES_Variable]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>SES_Variable</remote-alias>
+              <ordinal>8</ordinal>
+              <family>Sheet1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RAU_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>SES_Value</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[SES_Value]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>SES_Value</remote-alias>
+              <ordinal>9</ordinal>
+              <family>Sheet1</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>205</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>State</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[State]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>State</remote-alias>
+              <ordinal>10</ordinal>
+              <family>Sheet1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>8</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RAU_S2' />
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:SES_Variable:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Low_SES_Percent&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Housing_Unsuitable&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;English_Proficiency_Low&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Unemployment_Rate&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Education_Level_Low&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;Internet_NoAccess&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Aboriginal_Percent&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Australia&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Sheet1' id='Sheet1_267465DD60BA4F52B5981571BD54BB9C'>
+            <properties context=''>
+              <relation connection='excel-direct.0g4zr440mrcyra1fije9v1cjt5hg' name='Sheet1' table='[Sheet1$]' type='table'>
+                <columns gridOrigin='A1:K3361:no:A1:K3361:0' header='yes' outcome='6'>
+                  <column datatype='string' name='Code' ordinal='0' />
+                  <column datatype='string' name='Region' ordinal='1' />
+                  <column datatype='string' name='Gender' ordinal='2' />
+                  <column datatype='string' name='AgeGroup' ordinal='3' />
+                  <column datatype='string' name='Year' ordinal='4' />
+                  <column datatype='date' name='Year_Start' ordinal='5' />
+                  <column datatype='real' name='DeathRatePer100k' ordinal='6' />
+                  <column datatype='real' name='HospitalisationsPer100k' ordinal='7' />
+                  <column datatype='string' name='SES_Variable' ordinal='8' />
+                  <column datatype='real' name='SES_Value' ordinal='9' />
+                  <column datatype='string' name='State' ordinal='10' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <worksheets>
+    <worksheet name='Avg. CVD Death Rate by State'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#000000' fontname='Benton Sans Book' fontsize='12'>Average CVD Death Rate by State (Grouped by SES Level)</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (SES_vs_CVD_LongFormat)' name='federated.1hif58f0j4ncm115c49yt06o3yzt' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1hif58f0j4ncm115c49yt06o3yzt'>
+            <column aggregation='Sum' datatype='real' name='[DeathRatePer100k]' role='dimension' type='quantitative' />
+            <column datatype='string' name='[Gender]' role='dimension' type='nominal' />
+            <column aggregation='Sum' caption='SES Value' datatype='real' name='[SES_Value]' role='dimension' type='ordinal' />
+            <column caption='SES Variable' datatype='string' name='[SES_Variable]' role='dimension' type='nominal' />
+            <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[DeathRatePer100k]' derivation='Avg' name='[avg:DeathRatePer100k:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Gender]' derivation='None' name='[none:Gender:nk]' pivot='key' type='nominal' />
+            <column-instance column='[SES_Value]' derivation='None' name='[none:SES_Value:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[SES_Variable]' derivation='None' name='[none:SES_Variable:nk]' pivot='key' type='nominal' />
+            <column-instance column='[State]' derivation='None' name='[none:State:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1hif58f0j4ncm115c49yt06o3yzt].[none:Gender:nk]'>
+            <groupfilter function='member' level='[none:Gender:nk]' member='&quot;Males&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1hif58f0j4ncm115c49yt06o3yzt].[none:SES_Variable:nk]'>
+            <groupfilter function='member' level='[none:SES_Variable:nk]' member='&quot;Low_SES_Percent&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1hif58f0j4ncm115c49yt06o3yzt].[none:State:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1hif58f0j4ncm115c49yt06o3yzt].[avg:DeathRatePer100k:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.1hif58f0j4ncm115c49yt06o3yzt].[none:Gender:nk]</column>
+            <column>[federated.1hif58f0j4ncm115c49yt06o3yzt].[none:SES_Variable:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='height' field='[federated.1hif58f0j4ncm115c49yt06o3yzt].[avg:DeathRatePer100k:qk]' value='87' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='height' field='[federated.1hif58f0j4ncm115c49yt06o3yzt].[none:State:nk]' value='30' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='width' field='[federated.1hif58f0j4ncm115c49yt06o3yzt].[none:State:nk]' value='240' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' center='50.0' field='[federated.1hif58f0j4ncm115c49yt06o3yzt].[none:SES_Value:qk]' type='interpolated' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1hif58f0j4ncm115c49yt06o3yzt].[none:SES_Value:qk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1hif58f0j4ncm115c49yt06o3yzt].[none:State:nk]</rows>
+        <cols>[federated.1hif58f0j4ncm115c49yt06o3yzt].[avg:DeathRatePer100k:qk]</cols>
+      </table>
+      <simple-id uuid='{A83F0F01-1392-4129-99BD-FB9AA98A2A75}' />
+    </worksheet>
+    <worksheet name='CVD Deaths'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#000000' fontname='Benton Sans Book' fontsize='12'>Impact of Low Socioeconomic Status on Cardiovascular Death Rates</run>
+            <run>Æ&#10;</run>
+            <run fontcolor='#000000' fontname='Benton Sans Book' fontsize='8' italic='true'>Higher % of disadvantaged population is weakly associated with elevated CVD mortality rates.</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (SES_vs_CVD_LongFormat)' name='federated.1hif58f0j4ncm115c49yt06o3yzt' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1hif58f0j4ncm115c49yt06o3yzt'>
+            <column caption='Age Group' datatype='string' name='[AgeGroup]' role='dimension' type='nominal' />
+            <column aggregation='Sum' datatype='real' name='[DeathRatePer100k]' role='dimension' type='quantitative' />
+            <column datatype='string' name='[Gender]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Region]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column aggregation='Sum' caption='SES Value' datatype='real' name='[SES_Value]' role='dimension' type='ordinal' />
+            <column caption='SES Variable' datatype='string' name='[SES_Variable]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Year]' role='dimension' type='nominal' />
+            <column-instance column='[AgeGroup]' derivation='None' name='[none:AgeGroup:nk]' pivot='key' type='nominal' />
+            <column-instance column='[DeathRatePer100k]' derivation='None' name='[none:DeathRatePer100k:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Gender]' derivation='None' name='[none:Gender:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Region]' derivation='None' name='[none:Region:nk]' pivot='key' type='nominal' />
+            <column-instance column='[SES_Value]' derivation='None' name='[none:SES_Value:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[SES_Variable]' derivation='None' name='[none:SES_Variable:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1hif58f0j4ncm115c49yt06o3yzt].[none:SES_Variable:nk]'>
+            <groupfilter function='member' level='[none:SES_Variable:nk]' member='&quot;Low_SES_Percent&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1hif58f0j4ncm115c49yt06o3yzt].[none:SES_Variable:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1hif58f0j4ncm115c49yt06o3yzt].[none:AgeGroup:nk]' />
+              <lod column='[federated.1hif58f0j4ncm115c49yt06o3yzt].[none:Gender:nk]' />
+              <lod column='[federated.1hif58f0j4ncm115c49yt06o3yzt].[none:AgeGroup:nk]' />
+              <lod column='[federated.1hif58f0j4ncm115c49yt06o3yzt].[none:Year:nk]' />
+              <lod column='[federated.1hif58f0j4ncm115c49yt06o3yzt].[none:Region:nk]' />
+            </encodings>
+            <trendline enable-confidence-bands='false' enable-instant-analytics='true' enabled='true' exclude-color='false' exclude-intercept='false' fit='linear' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1hif58f0j4ncm115c49yt06o3yzt].[none:DeathRatePer100k:qk]</rows>
+        <cols>[federated.1hif58f0j4ncm115c49yt06o3yzt].[none:SES_Value:qk]</cols>
+      </table>
+      <simple-id uuid='{D722407D-C2F5-4A07-BB9C-3A71281A2AB0}' />
+    </worksheet>
+    <worksheet name='CVD Hospitalisations'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#000000' fontname='Benton Sans Book' fontsize='12'>Impact of Low Socioeconomic Status on Cardiovascular Hospitalisation Rates</run>
+            <run>Æ&#10;</run>
+            <run fontcolor='#000000' fontname='Benton Sans Book' fontsize='8' italic='true'>Hospitalization rates show a slight increase with socioeconomic disadvantage.</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (SES_vs_CVD_LongFormat)' name='federated.1hif58f0j4ncm115c49yt06o3yzt' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1hif58f0j4ncm115c49yt06o3yzt'>
+            <column caption='Age Group' datatype='string' name='[AgeGroup]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Gender]' role='dimension' type='nominal' />
+            <column datatype='real' name='[HospitalisationsPer100k]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Region]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column aggregation='Sum' caption='SES Value' datatype='real' name='[SES_Value]' role='dimension' type='ordinal' />
+            <column caption='SES Variable' datatype='string' name='[SES_Variable]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Year]' role='dimension' type='nominal' />
+            <column-instance column='[AgeGroup]' derivation='None' name='[none:AgeGroup:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Gender]' derivation='None' name='[none:Gender:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Region]' derivation='None' name='[none:Region:nk]' pivot='key' type='nominal' />
+            <column-instance column='[SES_Value]' derivation='None' name='[none:SES_Value:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[SES_Variable]' derivation='None' name='[none:SES_Variable:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:nk]' pivot='key' type='nominal' />
+            <column-instance column='[HospitalisationsPer100k]' derivation='Sum' name='[sum:HospitalisationsPer100k:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1hif58f0j4ncm115c49yt06o3yzt].[none:SES_Variable:nk]'>
+            <groupfilter function='member' level='[none:SES_Variable:nk]' member='&quot;Internet_NoAccess&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1hif58f0j4ncm115c49yt06o3yzt].[none:SES_Variable:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1hif58f0j4ncm115c49yt06o3yzt].[none:Gender:nk]' />
+              <lod column='[federated.1hif58f0j4ncm115c49yt06o3yzt].[none:Gender:nk]' />
+              <lod column='[federated.1hif58f0j4ncm115c49yt06o3yzt].[none:AgeGroup:nk]' />
+              <lod column='[federated.1hif58f0j4ncm115c49yt06o3yzt].[none:Year:nk]' />
+              <lod column='[federated.1hif58f0j4ncm115c49yt06o3yzt].[none:Region:nk]' />
+            </encodings>
+            <trendline enable-confidence-bands='false' enable-instant-analytics='true' enabled='true' exclude-color='false' exclude-intercept='false' fit='linear' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1hif58f0j4ncm115c49yt06o3yzt].[sum:HospitalisationsPer100k:qk]</rows>
+        <cols>[federated.1hif58f0j4ncm115c49yt06o3yzt].[none:SES_Value:qk]</cols>
+      </table>
+      <simple-id uuid='{97B3FD85-BA74-491D-8069-A6790FFF28BB}' />
+    </worksheet>
+    <worksheet name='KPI CVD deaths'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontsize='12'>KPI CVD Deaths</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (SES_vs_CVD_LongFormat)' name='federated.1hif58f0j4ncm115c49yt06o3yzt' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1hif58f0j4ncm115c49yt06o3yzt'>
+            <column aggregation='Sum' datatype='real' name='[DeathRatePer100k]' role='dimension' type='quantitative' />
+            <column-instance column='[DeathRatePer100k]' derivation='Max' name='[max:DeathRatePer100k:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[DeathRatePer100k]' derivation='Min' name='[min:DeathRatePer100k:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1hif58f0j4ncm115c49yt06o3yzt].[max:DeathRatePer100k:qk]' />
+              <text column='[federated.1hif58f0j4ncm115c49yt06o3yzt].[min:DeathRatePer100k:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontalignment='0'> Max CVD Death Rate:</run>
+                <run fontalignment='0'>Æ&#10;</run>
+                <run bold='true' fontalignment='0' fontcolor='#55aaff' fontsize='12'><![CDATA[  <[federated.1hif58f0j4ncm115c49yt06o3yzt].[max:DeathRatePer100k:qk]>  per 100k]]></run>
+                <run fontalignment='0'>Æ&#10;&#10;</run>
+                <run bold='true' fontalignment='0'> Min CVD Death Rate:</run>
+                <run fontalignment='0'>Æ&#10;</run>
+                <run bold='true' fontalignment='0' fontcolor='#55aaff' fontsize='12'><![CDATA[ <[federated.1hif58f0j4ncm115c49yt06o3yzt].[min:DeathRatePer100k:qk]> per 100k]]></run>
+                <run fontalignment='0'>Æ&#10;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{AC4BA15D-1976-4471-865A-907885334397}' />
+    </worksheet>
+    <worksheet name='SES disadvantage by state'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#000000' fontname='Benton Sans Book' fontsize='12'>Low Socioeconomic Disadvantage (%) by State</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (SES_vs_CVD_LongFormat)' name='federated.1hif58f0j4ncm115c49yt06o3yzt' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.1hif58f0j4ncm115c49yt06o3yzt'>
+            <column aggregation='Sum' datatype='real' name='[DeathRatePer100k]' role='dimension' type='quantitative' />
+            <column datatype='real' name='[HospitalisationsPer100k]' role='measure' type='quantitative' />
+            <column aggregation='Sum' caption='SES Value' datatype='real' name='[SES_Value]' role='dimension' type='ordinal' />
+            <column caption='SES Variable' datatype='string' name='[SES_Variable]' role='dimension' type='nominal' />
+            <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[SES_Value]' derivation='None' name='[none:SES_Value:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[SES_Variable]' derivation='None' name='[none:SES_Variable:nk]' pivot='key' type='nominal' />
+            <column-instance column='[State]' derivation='None' name='[none:State:nk]' pivot='key' type='nominal' />
+            <column-instance column='[DeathRatePer100k]' derivation='Sum' name='[sum:DeathRatePer100k:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[HospitalisationsPer100k]' derivation='Sum' name='[sum:HospitalisationsPer100k:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.1hif58f0j4ncm115c49yt06o3yzt].[Latitude (generated)]' included-values='in-range'>
+            <min>-42.0</min>
+            <max>-20.0</max>
+          </filter>
+          <filter class='quantitative' column='[federated.1hif58f0j4ncm115c49yt06o3yzt].[Longitude (generated)]' included-values='non-null' />
+          <filter class='categorical' column='[federated.1hif58f0j4ncm115c49yt06o3yzt].[none:SES_Variable:nk]'>
+            <groupfilter function='member' level='[none:SES_Variable:nk]' member='&quot;Low_SES_Percent&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1hif58f0j4ncm115c49yt06o3yzt].[none:SES_Variable:nk]</column>
+            <column>[federated.1hif58f0j4ncm115c49yt06o3yzt].[Longitude (generated)]</column>
+            <column>[federated.1hif58f0j4ncm115c49yt06o3yzt].[Latitude (generated)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1hif58f0j4ncm115c49yt06o3yzt].[Longitude (generated)]' field-type='quantitative' max='21128893.840900633' min='9152957.6213758029' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.1hif58f0j4ncm115c49yt06o3yzt].[Latitude (generated)]' field-type='quantitative' max='309579.05012687761' min='-6753152.8593657864' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' center='50.0' field='[federated.1hif58f0j4ncm115c49yt06o3yzt].[none:SES_Value:qk]' type='custom-interpolated'>
+              <color-palette custom='true' name='' type='ordered-diverging'>
+                <color>#aa0000</color>
+                <color>#ae0f0f</color>
+                <color>#b22020</color>
+                <color>#b63131</color>
+                <color>#bb4444</color>
+                <color>#bf5656</color>
+                <color>#c36a6a</color>
+                <color>#c77f7f</color>
+                <color>#cc9494</color>
+                <color>#d0aaaa</color>
+                <color>#d4c1c1</color>
+                <color>#d9d9d9</color>
+                <color>#dcdcdc</color>
+                <color>#dfdfdf</color>
+                <color>#e3e3e3</color>
+                <color>#e6e6e6</color>
+                <color>#eaeaea</color>
+                <color>#ededed</color>
+                <color>#f1f1f1</color>
+                <color>#f4f4f4</color>
+                <color>#f8f8f8</color>
+                <color>#fbfbfb</color>
+                <color>#ffffff</color>
+              </color-palette>
+            </encoding>
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Multipolygon' />
+            <encodings>
+              <color column='[federated.1hif58f0j4ncm115c49yt06o3yzt].[none:SES_Value:qk]' />
+              <lod column='[federated.1hif58f0j4ncm115c49yt06o3yzt].[none:State:nk]' />
+              <tooltip column='[federated.1hif58f0j4ncm115c49yt06o3yzt].[sum:DeathRatePer100k:qk]' />
+              <tooltip column='[federated.1hif58f0j4ncm115c49yt06o3yzt].[sum:HospitalisationsPer100k:qk]' />
+              <geometry column='[federated.1hif58f0j4ncm115c49yt06o3yzt].[Geometry (generated)]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>State:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.1hif58f0j4ncm115c49yt06o3yzt].[none:State:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Low SES %:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.1hif58f0j4ncm115c49yt06o3yzt].[none:SES_Value:qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>CVD DeathRatePer100k:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.1hif58f0j4ncm115c49yt06o3yzt].[sum:DeathRatePer100k:qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>HospitalisationsPer100k:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.1hif58f0j4ncm115c49yt06o3yzt].[sum:HospitalisationsPer100k:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+          </pane>
+        </panes>
+        <rows>[federated.1hif58f0j4ncm115c49yt06o3yzt].[Latitude (generated)]</rows>
+        <cols>[federated.1hif58f0j4ncm115c49yt06o3yzt].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{3D239463-3D8E-470D-A1E3-5CC90678BD2B}' />
+    </worksheet>
+    <worksheet name='Sheet 6'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (SES_vs_CVD_LongFormat)' name='federated.1hif58f0j4ncm115c49yt06o3yzt' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1hif58f0j4ncm115c49yt06o3yzt'>
+            <column caption='SES Value (bin)' datatype='integer' name='[SES Value (bin)]' role='dimension' type='ordinal'>
+              <calculation class='bin' decimals='1' formula='[SES_Value]' peg='0' size='10' />
+            </column>
+            <column aggregation='Sum' caption='SES Value' datatype='real' name='[SES_Value]' role='dimension' type='ordinal' />
+            <column caption='SES Variable' datatype='string' name='[SES_Variable]' role='dimension' type='nominal' />
+            <column-instance column='[SES Value (bin)]' derivation='None' name='[none:SES Value (bin):ok]' pivot='key' type='ordinal' />
+            <column-instance column='[SES_Variable]' derivation='None' name='[none:SES_Variable:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='height' field='[federated.1hif58f0j4ncm115c49yt06o3yzt].[none:SES_Variable:nk]' value='42' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.1hif58f0j4ncm115c49yt06o3yzt].[none:SES_Variable:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='pane'>
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1hif58f0j4ncm115c49yt06o3yzt].[none:SES_Variable:nk]</rows>
+        <cols>[federated.1hif58f0j4ncm115c49yt06o3yzt].[none:SES Value (bin):ok]</cols>
+        <show-full-range>
+          <column>[federated.1hif58f0j4ncm115c49yt06o3yzt].[SES Value (bin)]</column>
+        </show-full-range>
+      </table>
+      <simple-id uuid='{6350D85A-ACC8-4824-8D66-375A400A051F}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Socioeconomic Dashboard'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#000000' fontname='Benton Sans Book' fontsize='16'>Impact of Socioeconomic Disadvantage on Cardiovascular Disease in Australia</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <style />
+      <size maxheight='1200' maxwidth='2400' minheight='1200' minwidth='2400' sizing-mode='fixed' />
+      <datasources>
+        <datasource caption='Sheet1 (SES_vs_CVD_LongFormat)' name='federated.1hif58f0j4ncm115c49yt06o3yzt' />
+      </datasources>
+      <datasource-dependencies datasource='federated.1hif58f0j4ncm115c49yt06o3yzt'>
+        <column datatype='string' name='[Gender]' role='dimension' type='nominal' />
+        <column caption='SES Variable' datatype='string' name='[SES_Variable]' role='dimension' type='nominal' />
+        <column-instance column='[Gender]' derivation='None' name='[none:Gender:nk]' pivot='key' type='nominal' />
+        <column-instance column='[SES_Variable]' derivation='None' name='[none:SES_Variable:nk]' pivot='key' type='nominal' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98666' id='5' param='vert' type-v2='layout-flow' w='99334' x='333' y='667'>
+            <zone h='3917' id='7' type-v2='title' w='99334' x='333' y='667'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone h='94749' id='6' type-v2='layout-basic' w='99334' x='333' y='4584' />
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone h='39250' id='8' name='CVD Deaths' w='43375' x='500' y='5750' />
+        <zone h='21417' id='9' name='CVD Deaths' param='[federated.1hif58f0j4ncm115c49yt06o3yzt].[none:SES_Variable:nk]' type-v2='filter' w='10682' x='89273' y='7917' />
+        <zone h='6833' id='10' name='CVD Deaths' pane-specification-id='0' param='[federated.1hif58f0j4ncm115c49yt06o3yzt].[none:AgeGroup:nk]' type-v2='color' w='10045' x='89500' y='29250' />
+        <zone h='38867' id='11' name='SES disadvantage by state' w='43636' x='44227' y='5600' />
+        <zone h='5917' id='12' name='SES disadvantage by state' param='[federated.1hif58f0j4ncm115c49yt06o3yzt].[Latitude (generated)]' show-domain='false' show-null-ctrls='false' type-v2='filter' w='9227' x='89591' y='43333' />
+        <zone h='5500' id='13' name='SES disadvantage by state' pane-specification-id='2' param='[federated.1hif58f0j4ncm115c49yt06o3yzt].[none:SES_Value:qk]' type-v2='color' w='9458' x='89625' y='36250' />
+        <zone h='43667' id='16' name='CVD Hospitalisations' w='44167' x='44208' y='45083' />
+        <zone h='21333' id='17' name='CVD Hospitalisations' param='[federated.1hif58f0j4ncm115c49yt06o3yzt].[none:SES_Variable:nk]' type-v2='filter' w='9958' x='89625' y='50583' />
+        <zone h='6667' id='18' name='CVD Hospitalisations' pane-specification-id='0' param='[federated.1hif58f0j4ncm115c49yt06o3yzt].[none:Gender:nk]' type-v2='color' w='8042' x='89667' y='71667' />
+        <zone forceUpdate='true' h='11750' id='19' type-v2='text' w='99875' x='292' y='88417'>
+          <formatted-text>
+            <run bold='true' fontcolor='#000000' fontname='Benton Sans Book' fontsize='12'>Key Insights – Socioeconomic Disadvantage and Cardiovascular Disease</run>
+            <run>Æ&#10;</run>
+            <run fontcolor='#000000' fontname='Benton Sans Book' fontsize='12'>• </run>
+            <run bold='true' fontcolor='#000000' fontname='Benton Sans Book' fontsize='12'>Northern Territory</run>
+            <run fontcolor='#000000' fontname='Benton Sans Book' fontsize='12'> and </run>
+            <run bold='true' fontcolor='#000000' fontname='Benton Sans Book' fontsize='12'>Queensland</run>
+            <run fontcolor='#000000' fontname='Benton Sans Book' fontsize='12'> show the </run>
+            <run bold='true' fontcolor='#000000' fontname='Benton Sans Book' fontsize='12'>highest socioeconomic disadvantage</run>
+            <run fontcolor='#000000' fontname='Benton Sans Book' fontsize='12'> (Low_SES_Percent) and </run>
+            <run bold='true' fontcolor='#000000' fontname='Benton Sans Book' fontsize='12'>elevated CVD death rates</run>
+            <run fontcolor='#000000' fontname='Benton Sans Book' fontsize='12'>.</run>
+            <run>Æ&#10;</run>
+            <run fontcolor='#000000' fontname='Benton Sans Book' fontsize='12'>• While the </run>
+            <run bold='true' fontcolor='#000000' fontname='Benton Sans Book' fontsize='12'>overall correlation is weak</run>
+            <run fontcolor='#000000' fontname='Benton Sans Book' fontsize='12'>, regions with </run>
+            <run bold='true' fontcolor='#000000' fontname='Benton Sans Book' fontsize='12'>high disadvantages</run>
+            <run fontcolor='#000000' fontname='Benton Sans Book' fontsize='12'> and older adults (especially </run>
+            <run bold='true' fontcolor='#000000' fontname='Benton Sans Book' fontsize='12'>75+</run>
+            <run fontcolor='#000000' fontname='Benton Sans Book' fontsize='12'>) consistently experience </run>
+            <run bold='true' fontcolor='#000000' fontname='Benton Sans Book' fontsize='12'>greater CVD mortality and hospitalization</run>
+            <run fontcolor='#000000' fontname='Benton Sans Book' fontsize='12'>.</run>
+            <run>Æ&#10;</run>
+            <run fontcolor='#000000' fontname='Benton Sans Book' fontsize='12'>• The data highlights a </run>
+            <run bold='true' fontcolor='#000000' fontname='Benton Sans Book' fontsize='12'>clear need for targeted policy interventions</run>
+            <run fontcolor='#000000' fontname='Benton Sans Book' fontsize='12'> and better </run>
+            <run bold='true' fontcolor='#000000' fontname='Benton Sans Book' fontsize='12'>health resource allocation</run>
+            <run fontcolor='#000000' fontname='Benton Sans Book' fontsize='12'> in </run>
+            <run bold='true' fontcolor='#000000' fontname='Benton Sans Book' fontsize='12'>socioeconomically disadvantaged communities</run>
+            <run fontcolor='#000000' fontname='Benton Sans Book' fontsize='12'>.</run>
+          </formatted-text>
+        </zone>
+        <zone h='41417' id='26' name='Avg. CVD Death Rate by State' w='43125' x='542' y='46167' />
+        <zone h='9417' id='27' name='Avg. CVD Death Rate by State' param='[federated.1hif58f0j4ncm115c49yt06o3yzt].[none:Gender:nk]' type-v2='filter' w='6667' x='89917' y='78750' />
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <layout-options>
+            <title>
+              <formatted-text>
+                <run bold='true' fontcolor='#000000' fontname='Benton Sans Book' fontsize='16'>Impact of Socioeconomic Disadvantage on Cardiovascular Disease in Australia</run>
+              </formatted-text>
+            </title>
+          </layout-options>
+          <size maxheight='1750' minheight='1750' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='29' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98666' id='28' param='vert' type-v2='layout-flow' w='99334' x='333' y='667'>
+                <zone h='3917' id='7' type-v2='title' w='99334' x='333' y='667'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='5917' id='12' name='SES disadvantage by state' param='[federated.1hif58f0j4ncm115c49yt06o3yzt].[Latitude (generated)]' show-domain='false' show-null-ctrls='false' type-v2='filter' w='9227' x='89591' y='43333'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='38867' id='11' is-fixed='true' name='SES disadvantage by state' w='43636' x='44227' y='5600'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='5500' id='13' name='SES disadvantage by state' pane-specification-id='2' param='[federated.1hif58f0j4ncm115c49yt06o3yzt].[none:SES_Value:qk]' type-v2='color' w='9458' x='89625' y='36250'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='21417' id='9' mode='checkdropdown' name='CVD Deaths' param='[federated.1hif58f0j4ncm115c49yt06o3yzt].[none:SES_Variable:nk]' type-v2='filter' w='10682' x='89273' y='7917'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='39250' id='8' is-fixed='true' name='CVD Deaths' w='43375' x='500' y='5750'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='6833' id='10' name='CVD Deaths' pane-specification-id='0' param='[federated.1hif58f0j4ncm115c49yt06o3yzt].[none:AgeGroup:nk]' type-v2='color' w='10045' x='89500' y='29250'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='21333' id='17' mode='checkdropdown' name='CVD Hospitalisations' param='[federated.1hif58f0j4ncm115c49yt06o3yzt].[none:SES_Variable:nk]' type-v2='filter' w='9958' x='89625' y='50583'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='43667' id='16' is-fixed='true' name='CVD Hospitalisations' w='44167' x='44208' y='45083'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='6667' id='18' name='CVD Hospitalisations' pane-specification-id='0' param='[federated.1hif58f0j4ncm115c49yt06o3yzt].[none:Gender:nk]' type-v2='color' w='8042' x='89667' y='71667'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='9417' id='27' mode='checkdropdown' name='Avg. CVD Death Rate by State' param='[federated.1hif58f0j4ncm115c49yt06o3yzt].[none:Gender:nk]' type-v2='filter' w='6667' x='89917' y='78750'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='41417' id='26' is-fixed='true' name='Avg. CVD Death Rate by State' w='43125' x='542' y='46167'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone forceUpdate='true' h='11750' id='19' type-v2='text' w='99875' x='292' y='88417'>
+                  <formatted-text>
+                    <run bold='true' fontcolor='#000000' fontname='Benton Sans Book' fontsize='12'>Key Insights – Socioeconomic Disadvantage and Cardiovascular Disease</run>
+                    <run>Æ&#10;</run>
+                    <run fontcolor='#000000' fontname='Benton Sans Book' fontsize='12'>• </run>
+                    <run bold='true' fontcolor='#000000' fontname='Benton Sans Book' fontsize='12'>Northern Territory</run>
+                    <run fontcolor='#000000' fontname='Benton Sans Book' fontsize='12'> and </run>
+                    <run bold='true' fontcolor='#000000' fontname='Benton Sans Book' fontsize='12'>Queensland</run>
+                    <run fontcolor='#000000' fontname='Benton Sans Book' fontsize='12'> show the </run>
+                    <run bold='true' fontcolor='#000000' fontname='Benton Sans Book' fontsize='12'>highest socioeconomic disadvantage</run>
+                    <run fontcolor='#000000' fontname='Benton Sans Book' fontsize='12'> (Low_SES_Percent) and </run>
+                    <run bold='true' fontcolor='#000000' fontname='Benton Sans Book' fontsize='12'>elevated CVD death rates</run>
+                    <run fontcolor='#000000' fontname='Benton Sans Book' fontsize='12'>.</run>
+                    <run>Æ&#10;</run>
+                    <run fontcolor='#000000' fontname='Benton Sans Book' fontsize='12'>• While the </run>
+                    <run bold='true' fontcolor='#000000' fontname='Benton Sans Book' fontsize='12'>overall correlation is weak</run>
+                    <run fontcolor='#000000' fontname='Benton Sans Book' fontsize='12'>, regions with </run>
+                    <run bold='true' fontcolor='#000000' fontname='Benton Sans Book' fontsize='12'>high disadvantages</run>
+                    <run fontcolor='#000000' fontname='Benton Sans Book' fontsize='12'> and older adults (especially </run>
+                    <run bold='true' fontcolor='#000000' fontname='Benton Sans Book' fontsize='12'>75+</run>
+                    <run fontcolor='#000000' fontname='Benton Sans Book' fontsize='12'>) consistently experience </run>
+                    <run bold='true' fontcolor='#000000' fontname='Benton Sans Book' fontsize='12'>greater CVD mortality and hospitalization</run>
+                    <run fontcolor='#000000' fontname='Benton Sans Book' fontsize='12'>.</run>
+                    <run>Æ&#10;</run>
+                    <run fontcolor='#000000' fontname='Benton Sans Book' fontsize='12'>• The data highlights a </run>
+                    <run bold='true' fontcolor='#000000' fontname='Benton Sans Book' fontsize='12'>clear need for targeted policy interventions</run>
+                    <run fontcolor='#000000' fontname='Benton Sans Book' fontsize='12'> and better </run>
+                    <run bold='true' fontcolor='#000000' fontname='Benton Sans Book' fontsize='12'>health resource allocation</run>
+                    <run fontcolor='#000000' fontname='Benton Sans Book' fontsize='12'> in </run>
+                    <run bold='true' fontcolor='#000000' fontname='Benton Sans Book' fontsize='12'>socioeconomically disadvantaged communities</run>
+                    <run fontcolor='#000000' fontname='Benton Sans Book' fontsize='12'>.</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{881AFDD7-A7C5-41EE-82B1-8A0FFC221530}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' name='CVD Deaths'>
+      <cards>
+        <edge name='left'>
+          <strip size='240'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='48'>
+            <card type='columns' />
+          </strip>
+          <strip size='48'>
+            <card type='rows' />
+          </strip>
+          <strip size='45'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='240'>
+            <card param='[federated.1hif58f0j4ncm115c49yt06o3yzt].[none:SES_Variable:nk]' type='filter' />
+            <card pane-specification-id='0' param='[federated.1hif58f0j4ncm115c49yt06o3yzt].[none:AgeGroup:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{43DAAE7D-8861-4182-A84E-A4069DEAAA5C}' />
+    </window>
+    <window class='worksheet' name='KPI CVD deaths'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{F9F0E2BE-2859-4682-BAEE-A103ED74DA50}' />
+    </window>
+    <window class='worksheet' name='CVD Hospitalisations'>
+      <cards>
+        <edge name='left'>
+          <strip size='240'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='48'>
+            <card type='columns' />
+          </strip>
+          <strip size='48'>
+            <card type='rows' />
+          </strip>
+          <strip size='45'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='240'>
+            <card param='[federated.1hif58f0j4ncm115c49yt06o3yzt].[none:SES_Variable:nk]' type='filter' />
+            <card pane-specification-id='0' param='[federated.1hif58f0j4ncm115c49yt06o3yzt].[none:Gender:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{2FBB35B2-4C32-4AC5-8AB6-4C6061149859}' />
+    </window>
+    <window class='worksheet' name='SES disadvantage by state'>
+      <cards>
+        <edge name='left'>
+          <strip size='240'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='48'>
+            <card type='columns' />
+          </strip>
+          <strip size='48'>
+            <card type='rows' />
+          </strip>
+          <strip size='45'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='240'>
+            <card param='[federated.1hif58f0j4ncm115c49yt06o3yzt].[Latitude (generated)]' show-domain='false' show-null-ctrls='false' type='filter' />
+            <card pane-specification-id='2' param='[federated.1hif58f0j4ncm115c49yt06o3yzt].[none:SES_Value:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{D0DAA0E3-9A87-4D66-9274-5F3AC2FCFB71}' />
+    </window>
+    <window class='worksheet' name='Avg. CVD Death Rate by State'>
+      <cards>
+        <edge name='left'>
+          <strip size='240'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='48'>
+            <card type='columns' />
+          </strip>
+          <strip size='48'>
+            <card type='rows' />
+          </strip>
+          <strip size='46'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='240'>
+            <card param='[federated.1hif58f0j4ncm115c49yt06o3yzt].[none:Gender:nk]' type='filter' />
+            <card pane-specification-id='0' param='[federated.1hif58f0j4ncm115c49yt06o3yzt].[none:SES_Value:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{CCD2B7D4-3766-4B09-875F-B3079B20A6EC}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Socioeconomic Dashboard'>
+      <viewpoints>
+        <viewpoint name='Avg. CVD Death Rate by State' />
+        <viewpoint name='CVD Deaths'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='CVD Hospitalisations'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='SES disadvantage by state'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='11' />
+      <simple-id uuid='{2804B8D5-C077-4DA8-83FE-BBA2B243C7CB}' />
+    </window>
+    <window class='worksheet' name='Sheet 6'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1hif58f0j4ncm115c49yt06o3yzt].[none:SES_Variable:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{2116C823-D03B-4BD0-8910-3413CF45EEF6}' />
+    </window>
+  </windows>
+</workbook>
